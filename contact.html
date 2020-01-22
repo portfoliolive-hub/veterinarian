@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta tags-->
+  <meta charset="UTF-8">
+  <meta name="description" content="veterinarian">
+  <meta name="keywords" content="pets,dog,cat,animal,veterinarian">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinarian</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans|PT+Sans:400,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alike&display=swap" rel="stylesheet">
+  <!---bootstrap,fontawesome,animate-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./fontawesome5/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+  <!--owl-carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!--custom style-->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="./css/contact.css">
+  <a href="./index.html"></a>
+
+
+</head>
+
+<body class="contact-full">
+  <div id="main-nav">
+    <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon">menu</span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"> <a class="nav-link" href="./index.html">Home<span
+                class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Reviews</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Blog</a> </li>
+
+          <li class="nav-item"> <a class="nav-link" href="#">Contact</a>
+          </li>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<main>
+<section class="form-contact">
+
+
+
+
+  <div class="container">
+    <div class="form-content">
+      <h1 class="form-tit">Contact Us</h1>
+      <h3 class="form-sub">We'd love to hear from you</h3>
+
+      <form>
+        <ul class="form-style-1">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+            <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="email" name="field3" class="field-long" />
+            </li>
+            <li>
+                <label>Subject</label>
+                <select name="field4" class="field-select">
+                <option value="Advertise">Making appointment</option>
+                <option value="Partnership">Got a tip</option>
+                <option value="General Question">General</option>
+                </select>
+            </li>
+            <li>
+                <label>Your Message <span class="required">*</span></label>
+                <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit" />
+            </li>
+        </ul>
+        </form>
+    </div>
+    
+
+
+</section>
+<div class="owl-wrapper mr-auto">
+  
+<div class="owl-carousel" style="width:100%;height: 400px">
+  <div class="owl-item" style="width:100%;height:400px"><img src="./images/owl1.jpg"></div>
+  <div class="owl-item" style="width: 100%;height:400px"><img src="./images/owl2.jpg"></div>
+  <div class="owl-item" style="width: 100%;height:400px"><img src="./images/owl4.jpg"></div>
+  <div class="owl-item" style="width:100%;height:500px"><img src="./images/owl5.jpg"></div>
+  <div class="owl-item" style="width: 100%;height:400px"><img src="./images/owl2.jpg"></div>
+
+</div>
+
+
+</div>
+
+
+</main>
+
+  <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./js/owl.autoplay.js"></script>
+
+
+  <script>
+ $( document ).ready(function() {
+
+$('.owl-carousel').owlCarousel({
+loop:true,
+autoplay:true,
+smartSpeed: 1600,
+margin:15,
+navText : ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"],
+responsiveClass:true,
+autoplayTimeout:5000,
+animateIn: 'fadeIn',
+animateOut: 'fadeOut',
+responsive:{
+0: {
+items:1,
+nav:false,
+dots: true
+},
+768: {
+items:2,
+nav:false,
+dots: false
+},
+992: {
+margin:15, 
+items:3,
+nav:false,
+dots: false
+},
+1200: {
+items:4,
+nav:false,
+dots: false
+}
+}
+});
+
+});
+
+  </script>
+
+  <script>
+    window.onscroll = () => {
+      const nav = document.querySelector('#main-nav');
+      if (this.scrollY <= 10) nav.className = '';
+      else nav.className = 'scroll';
+    };
+  </script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
